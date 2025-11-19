@@ -136,7 +136,7 @@ namespace CampuStore
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();
-            loginForm login = new loginForm();
+            LoginForm login = new LoginForm();
             login.Show();
         }
 
@@ -250,10 +250,11 @@ namespace CampuStore
             string StDepartment = comboStDept.SelectedItem.ToString();
             string StYear = comboStYear.SelectedItem.ToString();
             string StPassword = txtStPass.Text;
+            string stID = txtStID.Text;
 
 
             string query = "INSERT INTO Student VALUES ('" + StName + "', '" + StEmail + "', '" + StPhone + "', '" +
-               StDepartment + "', '" + StYear + "', '" + StPassword + "')";
+               StDepartment + "', '" + StYear + "', '" + StPassword + "', '" + stID + "')";
 
 
             SqlCommand cmd = new SqlCommand(query, con);
@@ -265,7 +266,7 @@ namespace CampuStore
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();
-            loginForm login = new loginForm();
+            LoginForm login = new LoginForm();
             login.Show();
         }
 
@@ -278,7 +279,7 @@ namespace CampuStore
         private void linkStLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            loginForm login = new loginForm();
+            LoginForm login = new LoginForm();
             login.Show();
             
         }
@@ -286,7 +287,7 @@ namespace CampuStore
         private void linkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            loginForm login = new loginForm();
+            LoginForm login = new LoginForm();
             login.Show();
             
         }

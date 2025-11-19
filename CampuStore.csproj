@@ -55,11 +55,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs" />
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs" />
+    <Compile Include="AdminPageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPageUsers.Designer.cs" />
+    <Compile Include="AdminSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSettings.Designer.cs" />
+    <Compile Include="CampuStoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CampuStoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dash.Designer.cs">
+      <DependentUpon>dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs" />
+    <Compile Include="Dashboard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard1.Designer.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInfo.Designer.cs">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProduct.Designer.cs" />
+    <Compile Include="OrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersForm.Designer.cs">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salers.Designer.cs" />
+    <Compile Include="Sales1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales1.Designer.cs" />
+    <Compile Include="SalesLogic.cs" />
+    <Compile Include="SessionData.cs" />
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
     </Compile>
     <Compile Include="SignupForm.cs">
       <SubType>Form</SubType>
@@ -69,8 +149,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="studentDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentDash.Designer.cs">
+      <DependentUpon>studentDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor.Designer.cs" />
+    <Compile Include="VendorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorInfo.Designer.cs" />
+    <EmbeddedResource Include="AdminDashboard.resx" />
+    <EmbeddedResource Include="AdminPage.resx" />
+    <EmbeddedResource Include="AdminPageUsers.resx" />
+    <EmbeddedResource Include="AdminSettings.resx" />
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dash.resx">
+      <DependentUpon>dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx" />
+    <EmbeddedResource Include="Dashboard1.resx" />
+    <EmbeddedResource Include="EditInfo.resx">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProduct.resx" />
+    <EmbeddedResource Include="OrdersForm.resx">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,10 +196,32 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Salers.resx" />
+    <EmbeddedResource Include="Sales1.resx" />
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignupForm.resx">
       <DependentUpon>SignupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="studentDash.resx">
+      <DependentUpon>studentDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor.resx" />
+    <EmbeddedResource Include="VendorInfo.resx" />
+    <None Include="CampuStoreDataSet.xsc">
+      <DependentUpon>CampuStoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CampuStoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CampuStoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CampuStoreDataSet.xss">
+      <DependentUpon>CampuStoreDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -98,5 +236,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-shopping-cart-convenient-icon-png-image_4637407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\licensed-image.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>taskkill /F /IM CampuStore.exe &gt;nul 2&gt;&amp;1 || exit /b 0
+
+
+
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
 </Project>

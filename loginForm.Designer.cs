@@ -1,6 +1,6 @@
 ﻿namespace CampuStore
 {
-    partial class loginForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelLogin = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lbLoginFoot = new System.Windows.Forms.Label();
+            this.checkLogin = new System.Windows.Forms.CheckBox();
             this.lbLoginHead = new System.Windows.Forms.Label();
             this.lbLoginSubHead = new System.Windows.Forms.Label();
             this.lbLoginPass = new System.Windows.Forms.Label();
@@ -37,9 +40,6 @@
             this.txtLoginPass = new System.Windows.Forms.TextBox();
             this.txtLoginEmail = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.checkLogin = new System.Windows.Forms.CheckBox();
-            this.lbLoginFoot = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,38 @@
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(344, 424);
             this.panelLogin.TabIndex = 0;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.linkLabel1.LinkColor = System.Drawing.Color.Green;
+            this.linkLabel1.Location = new System.Drawing.Point(242, 351);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(59, 20);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Sign up";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
+            // 
+            // lbLoginFoot
+            // 
+            this.lbLoginFoot.AutoSize = true;
+            this.lbLoginFoot.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.lbLoginFoot.Location = new System.Drawing.Point(63, 351);
+            this.lbLoginFoot.Name = "lbLoginFoot";
+            this.lbLoginFoot.Size = new System.Drawing.Size(173, 20);
+            this.lbLoginFoot.TabIndex = 10;
+            this.lbLoginFoot.Text = "Don\'t have an account ?";
+            // 
+            // checkLogin
+            // 
+            this.checkLogin.AutoSize = true;
+            this.checkLogin.Location = new System.Drawing.Point(69, 233);
+            this.checkLogin.Name = "checkLogin";
+            this.checkLogin.Size = new System.Drawing.Size(18, 17);
+            this.checkLogin.TabIndex = 9;
+            this.checkLogin.UseVisualStyleBackColor = true;
             // 
             // lbLoginHead
             // 
@@ -144,38 +176,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Log in";
             this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // checkLogin
-            // 
-            this.checkLogin.AutoSize = true;
-            this.checkLogin.Location = new System.Drawing.Point(69, 233);
-            this.checkLogin.Name = "checkLogin";
-            this.checkLogin.Size = new System.Drawing.Size(18, 17);
-            this.checkLogin.TabIndex = 9;
-            this.checkLogin.UseVisualStyleBackColor = true;
-            // 
-            // lbLoginFoot
-            // 
-            this.lbLoginFoot.AutoSize = true;
-            this.lbLoginFoot.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.lbLoginFoot.Location = new System.Drawing.Point(63, 351);
-            this.lbLoginFoot.Name = "lbLoginFoot";
-            this.lbLoginFoot.Size = new System.Drawing.Size(173, 20);
-            this.lbLoginFoot.TabIndex = 10;
-            this.lbLoginFoot.Text = "Don\'t have an account ?";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.linkLabel1.LinkColor = System.Drawing.Color.Green;
-            this.linkLabel1.Location = new System.Drawing.Point(242, 351);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(59, 20);
-            this.linkLabel1.TabIndex = 11;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign up";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // loginForm
             // 
